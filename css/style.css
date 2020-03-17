@@ -10,7 +10,7 @@ body {
 }
 
 /* Advantage */
-.advantage {
+.antitle {
   color: black !important;
   text-transform: uppercase;
   font-weight: bold;
@@ -44,4 +44,10 @@ body {
   .fixed-top {
     position: relative;
   }
+}
+
+/* Acordion */
+.itemDivider {
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  padding: 0.5rem 0px;
 }
