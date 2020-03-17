@@ -20,3 +20,28 @@ body {
   width: 180px;
   height: 180px;
 }
+
+/* Bloquote */
+#home-quote {
+  background-image: url(../img/home/viagem.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+#home-quote footer {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  #home-quote .display-4 {
+    font-size: 2.5rem;
+  }
+  body {
+    padding: 0px;
+  }
+  .fixed-top {
+    position: relative;
+  }
+}
