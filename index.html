@@ -9,6 +9,39 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Modal Login -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Log-in</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="emailLogin">Email address</label>
+              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="user@example.com">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="passwordLogin">Password</label>
+              <input type="password" class="form-control" id="passwordLogin" placeholder="********">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mt-2">
+              <small>Forgot your password? <a href="#">Click here!</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Navigation-Bar -->
   <nav class="navbar fixed-top py-3 navbar-expand-md bg-light navbar-light box-shadow">
     <a href="index.html">
@@ -22,19 +55,19 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Places</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="place.html">Toronto</a>
-            <a class="dropdown-item" href="place.html">Vancouver</a>
-            <a class="dropdown-item" href="place.html">Halifax</a>
+            <a class="dropdown-item" href="places.html">Toronto</a>
+            <a class="dropdown-item" href="places.html">Vancouver</a>
+            <a class="dropdown-item" href="places.html">Halifax</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="plan.html">Plans</a>
+          <a class="nav-link" href="plans.html">Plans</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-primary ml-md-2" href="register.html">Register</a>
@@ -143,7 +176,7 @@
       </div>
 
       <div>
-        <a href="plan.html" class="btn btn-primary btn-lg mt-5">Buy Now</a>
+        <a href="plans.html" class="btn btn-primary btn-lg mt-5">Buy Now</a>
       </div>
     </div>
   </section>
@@ -215,7 +248,7 @@
         <div class="col-md-3 col-6">
           <h4>Pages</h4>
           <ul class="list-unstyled">
-            <li><a href="plan.html">Plans</a></li>
+            <li><a href="plans.html">Plans</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="register.html">Register</a></li>
           </ul>
@@ -224,9 +257,9 @@
         <div class="col-md-3 col-6">
           <h4>Places</h4>
           <ul class="list-unstyled">
-            <li><a href="place.html">Toronto</a></li>
-            <li><a href="place.html">Vancouver</a></li>
-            <li><a href="place.html">Halifax</a></li>
+            <li><a href="places.html">Toronto</a></li>
+            <li><a href="places.html">Vancouver</a></li>
+            <li><a href="places.html">Halifax</a></li>
           </ul>
         </div>
 
