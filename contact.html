@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel DC</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Modal Login -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Log-in</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="emailLogin">Email address</label>
+              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="user@example.com">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="passwordLogin">Password</label>
+              <input type="password" class="form-control" id="passwordLogin" placeholder="********">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mt-2">
+              <small>Forgot your password? <a href="#">Click here!</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation-Bar -->
+  <nav class="navbar fixed-top py-3 navbar-expand-md bg-light navbar-light box-shadow">
+    <a href="index.html">
+      <img src="img/home/logo.png" class="navbar-brand" alt="Travel DC">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Places</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="places.html">Toronto</a>
+            <a class="dropdown-item" href="places.html">Vancouver</a>
+            <a class="dropdown-item" href="places.html">Halifax</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="plans.html">Plans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary ml-md-2" href="register.html">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
+  <section class="container">
+    <div class="my-5 text-center">
+      <p class="antitle">Have any questions?</p>
+      <h2 class="display-4 text-primary">Contact Us</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg mb-4">
+        <form class="bg-light rounded p-4 box-shadow" action="#">
+          <div class="form-group">
+            <label for="clientName">Name</label>
+            <input type="email" class="form-control" id="clientName" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="clientEmail">Email address</label>
+            <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="clientMessage">Message</label>
+            <textarea class="form-control" id="clientMessage" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      
+      <div class="col-lg">
+        <p class="antitle">Our address</p>
+        <a href="#">
+          <img class="img-fluid box-shadow rounded mb-4" src="img/map.png" alt="Our address">
+        </a>
+
+        <p class="antitle mb-2">Contact details</p>
+        <ul class="list-unstyled text-secondary">
+          <li>www.diegocapelladev.com</li>
+          <li>75 99842-0305</li>
+          <li>contato@diegocapelladev.com</li>
+        </ul>
+        <p class="antitle mb-2">Social media</p>
+        <ul class="list-unstyled" style="max-width: 260px;">
+          <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#">Linkedin</a></li>
+          <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#">Facebook</a></li>
+          <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collapse Questions -->
+  <section class="container mb-4">
+    <div class="my-5 text-center">
+      <p class="antitle">Still in doubt?</p>
+      <h2 class="display-4 text-primary">Common questions</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 accordion" id="accordionExample">
+        <div class="py-2" id="headingOne">
+          <a class="lead" href="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Is it possible to cancel the trip?</a>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iste eligendi minima sequi dolor sunt. Blanditiis voluptate odio voluptatem nesciunt.</p>
+        </div>
+
+        <div class="itemDivider" id="headingTwo">
+          <a class="lead" href="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">what guarantee if i miss the flight?</a>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, natus. Possimus aut dolorum dolores enim molestias obcaecati voluptates eaque? Voluptate magni corrupti asperiores id cum?</p>
+        </div>
+
+        <div class="itemDivider" id="headingthree">
+          <a class="lead" href="" data-toggle="collapse" data-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">What is the main form of travel?</a>
+        </div>
+        <div id="collapsethree" class="collapse" aria-labelledby="headingthree" data-parent="#accordionExample">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eaque iure minima corporis libero ad ut, temporibus provident ex sit distinctio perspiciatis.</p>
+        </div>
+
+        <div class="itemDivider" id="headingFour">
+          <a class="lead" href="" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">What is the best travel destination?</a>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, temporibus? Non qui vel iure fuga, veniam quibusdam amet dolor. Voluptas dolorum id impedit.</p>
+        </div>
+
+        <div class="itemDivider" id="headingFive">
+          <a class="lead" href="" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Do you offer discounts for large groups?</a>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, temporibus? Non qui vel iure fuga, veniam quibusdam amet dolor. Voluptas dolorum id impedit.</p>
+        </div>     
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4>Pages</h4>
+          <ul class="list-unstyled">
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4>Places</h4>
+          <ul class="list-unstyled">
+            <li><a href="places.html">Toronto</a></li>
+            <li><a href="places.html">Vancouver</a></li>
+            <li><a href="places.html">Halifax</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <h4>Contact</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>www.diegocapelladev.com</li>
+            <li>75 99842-0305</li>
+            <li>contato@diegocapelladev.com</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-ms-6">
+          <h4>Social Media</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#" style="max-width: 140px;">Linkedin</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#" style="max-width: 140px;">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#" style="max-width: 140px;">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-2">
+      <p class="mb-0 mt-1">&copy 2020 - Travel DC</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
