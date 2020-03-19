@@ -51,3 +51,13 @@ body {
   border-top: 1px solid rgba(0, 0, 0, .08);
   padding: 0.5rem 0px;
 }
+
+
+/* Page Plans */
+.list-plan li + li {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.list-plan li {
+  padding: 1rem;
+}
