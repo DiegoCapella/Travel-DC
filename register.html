@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel DC</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Modal Login -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Log-in</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="emailLogin">Email address</label>
+              <input type="email" class="form-control" id="emailLogin" aria-describedby="emailHelp" placeholder="user@example.com">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="passwordLogin">Password</label>
+              <input type="password" class="form-control" id="passwordLogin" placeholder="********">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mt-2">
+              <small>Forgot your password? <a href="#">Click here!</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation-Bar -->
+  <nav class="navbar fixed-top py-3 navbar-expand-md bg-light navbar-light box-shadow">
+    <a href="index.html">
+      <img src="img/home/logo.png" class="navbar-brand" alt="Travel DC">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Places</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="places.html">Toronto</a>
+            <a class="dropdown-item" href="places.html">Vancouver</a>
+            <a class="dropdown-item" href="places.html">Halifax</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="plans.html">Plans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item active">
+          <a class="btn btn-outline-primary ml-md-2" href="register.html">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Register -->
+  <section class="container">
+    <div class="text-center my-5">
+      <p class="antitle">Schedule your dream trip</p>
+      <h1 class="display-4 text-primary">Subscribe</h1>
+    </div>
+    <div class="row">
+      <form class="col-lg-6" action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Full name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputMembership">MN</label>
+            <input type="text" class="form-control" id="inputMembership" placeholder="xxx.xxx.xxx-xx">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="user@example.com">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="********">
+          </div>
+          <div class="form-group col-12">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Your street, neighborhood and number">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="The city">
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputState">State</label>
+            <select class="form-control" id="inputState">
+              <option>Select</option>
+              <option>Ontario</option>
+              <option>British Columbia</option>
+              <option>Nova Scotia</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputZipcode">Zip code</label>
+            <input type="text" class="form-control" id="inputZipcode" placeholder="M4B 1B3">
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="container py-4">
+      <!-- Plan Selected -->
+    <div class="row">
+      <div class="col-md">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Premium <span class="badge badge-success">New</span></h2>
+          <ul class="list-plan list-unstyled">
+            <li>50 travel days</li>
+            <li>6 different destinations</li>
+            <li>Everything paid for by the company</li>
+            <li>Party tickets</li>
+          </ul>
+          <form action="#">
+            <div class="form-group">
+              <select class="form-control bg-light" id="inputCity">
+                <option>Select the city</option>
+                <option>Toronto</option>
+                <option>Vancouver</option>
+                <option>Halifax</option>
+              </select>
+            </div>
+          </form>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a class="btn btn-primary btn-lg btn-block" href="register.html">Buy Now</a>
+            </div>
+            <div class="col text-center">
+              <span class="h4">US$7,500.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4>Pages</h4>
+          <ul class="list-unstyled">
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <h4>Places</h4>
+          <ul class="list-unstyled">
+            <li><a href="places.html">Toronto</a></li>
+            <li><a href="places.html">Vancouver</a></li>
+            <li><a href="places.html">Halifax</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <h4>Contact</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>www.diegocapelladev.com</li>
+            <li>75 99842-0305</li>
+            <li>contato@diegocapelladev.com</li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 col-ms-6">
+          <h4>Social Media</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#" style="max-width: 140px;">Linkedin</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#" style="max-width: 140px;">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm mb-2 btn-block" href="#" style="max-width: 140px;">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-2">
+      <p class="mb-0 mt-1">&copy 2020 - Travel DC</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
