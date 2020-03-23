@@ -61,3 +61,7 @@ body {
 .list-plan li {
   padding: 1rem;
 }
+
+.text-primary {
+  color: #00db9d !important;
+}
